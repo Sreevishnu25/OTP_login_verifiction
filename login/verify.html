@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./verify.css">
+    <title>Verification</title>
+</head>
+<body>
+    <div class="form">
+        <h2>Verify your Account</h2><br>
+        <p>The OTP is sent to your registered mail Id</p><br>
+        <form action="verify.php" autocomplete="off" method="post">
+            <!-- <div class="error-text">Error</div><br> -->
+            <input type="hidden" name="email" value="<?php echo $_GET['email']; ?>" required>
+    <input type="text" name="verification_code" placeholder="Enter verification code" required />
+            <div class="submit">
+                <input type="submit" name="verify_email" value="Verify Now" class="button">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

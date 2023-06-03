@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+        <section>
+          <div class="container">
+            <div class="user signinBx">
+              <div class="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg" alt="" /></div>
+              <div class="formBx">
+                <form action="./index.php" method="post">
+                  <h2>Sign In</h2>
+                  <input type="text" name="email" placeholder="Username" />
+                  <input type="password" name="password" placeholder="Password" />
+                  <input type="submit" name="login" value="Login" />
+                  <p class="signup">
+                        Not a member?
+                    <a href="#" onclick="toggleForm();">Sign Up.</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="user signupBx">
+              <div class="formBx">
+                <form action="./signup.php" method="post">
+                  <h2>Create an account</h2>
+                  <input type="text" name="name" placeholder="Username" required pattern="[a-zA-2' - \s]*"/>
+                  <input type="email" name="email" placeholder="Email Address" />
+                  <input type="password" name="password" placeholder="Create Password" />
+                  <!-- <input type="password" name="password" placeholder="Confirm Password" /> -->
+                  <!-- <input type="phone" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}" oninvalid="setCustomValidity('Enter 10 digit number')" oninvalid="setCustomValidity('')" /> -->
+                  <!-- <input type="file" name="" id="image-preview" name="image" class="file-input" placeholder="Profile" oninvalid="setCustomValidity('Select Profile Image')" oninvalid="setCustomValidity('')"/> -->
+                  <input type="submit" name="register_btn" value="Sign Up" />
+                  <p class="signup">
+                    Already have an account ?
+                    <a href="#" onclick="toggleForm();">Sign in.</a>
+                  </p>
+                </form>
+              </div>
+              <div class="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img2.jpg" alt="" /></div>
+            </div>
+          </div>
+        </section>
+        <script src="./script.js"></script>
+      </body>
+</html>
